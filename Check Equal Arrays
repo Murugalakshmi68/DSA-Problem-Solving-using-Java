@@ -1,0 +1,14 @@
+import java.util.Arrays;
+
+class Solution {
+    public static boolean checkEqual(int[] a, int[] b) {
+
+        if (a.length != b.length)
+            return false;
+
+        Arrays.sort(a);
+        Arrays.sort(b);
+
+        return Arrays.equals(a, b);
+    }
+}
