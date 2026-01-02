@@ -1,0 +1,13 @@
+class Solution {
+    public static int[] frequencyCount(int[] arr, int n) {
+
+        int[] freq = new int[n]; // initialized with 0
+
+        // Count frequencies
+        for (int num : arr) {
+            freq[num - 1]++;
+        }
+
+        return freq;
+    }
+}
