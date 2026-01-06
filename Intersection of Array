@@ -1,0 +1,24 @@
+import java.util.*;
+
+class Solution {
+    public static int intersectionCount(int[] a, int[] b) {
+
+        Set<Integer> set = new HashSet<>();
+
+        // Step 1: Store elements of a[]
+        for (int num : a) {
+            set.add(num);
+        }
+
+        int count = 0;
+
+        // Step 2: Check elements of b[]
+        for (int num : b) {
+            if (set.contains(num)) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
